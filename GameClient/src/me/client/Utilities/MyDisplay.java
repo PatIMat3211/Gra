@@ -53,6 +53,7 @@ public class MyDisplay {
 	}
 	
 	public void update() {
+		shouldClose = Display.isCloseRequested();
 		Display.sync(FPS_CAP);
 		Display.update();
 		while(Keyboard.next()) {
