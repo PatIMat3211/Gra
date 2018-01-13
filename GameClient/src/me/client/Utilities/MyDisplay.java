@@ -27,6 +27,7 @@ public class MyDisplay {
 	
 	private boolean shouldClose = false;
 	
+	@SuppressWarnings("static-access")
 	public MyDisplay(String title, Configs configs) {
 		this.title = title;
 		WIDTH = configs.WIDTH;
